@@ -1,0 +1,77 @@
+git bash
+
+git
+
+pwd - Present Working Directory
+
+cd Desktop - Change Directory to Desktop  || cd /c || cd tenserflow/
+
+git status - To check the status
+
+user setup
+git config --global user.name "Bhavana"
+git config --global user.email "bhavanasingh152@gmail.com"
+git config --list - to check name & mail in the list
+
+git config --global core.editor vim - To choose the editor
+
+git config user.name - to check name
+git config user.email - to check email
+
+git init - To initialize a git repository
+
+git add --a  or git add . - To add all the files in staging area
+git add first.txt - To add first.txt in staging area
+
+untracked files - red
+tracked files - green
+arrow key - command history
+
+git commit -m "commit message" - To commit
+
+git log - To view all the commit
+q - To quit
+
+rm -rf .git - To destroy the git repository
+
+git clone link name - To clone any git repository
+
+touch error.log - To generate a error.log file 
+touch .gitignore 
+add error.log into gitignore to ignore
+
+if you want to ignore all the files of a specific type then add "*.filetype" ex *.log into gitignore
+dir/ - To ignore the whole directory
+/dir/ - To ignore the outer folder only
+
+git diff - compare the staging area to working directory
+git diff --staged - compare the last commit to staging area
+
+git commit -a -m "Direct Commit" - to commit directly
+
+git rm filename - to remove a file
+git mv first.txt first_renamed.txt - To rename a file
+
+git rm --cached filename - to untrack a file explicitely
+
+git log -p - to see the changes of the file/ diff
+git log -p -n/git log -p -3 - last n commits only
+
+git log --stat - Short summary or total no of insertion or deletion
+
+git log --pretty=oneline - commits in one line
+git log --pretty=short - commit author message
+git log --pretty=full - detailed information
+
+git log --since=2.days - previous 2 days
+
+git log --pretty=format:"%h -- %an" - hash & author name
+
+git commit --amend -  a new editor will open i.e. vim editor
+press "i"-will be able to edit
+press "esc:wq"-to close the editor
+
+git restore --staged filename - to unstage a file
+
+git checkout -- filename - to restore the previous version
+git checkout -f - to go back into last commit
